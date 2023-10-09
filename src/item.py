@@ -17,7 +17,7 @@ class Item:
         :param price: Цена за единицу товара.
         :param quantity: Количество товара в магазине.
         """
-        self.__name = name
+        self.name = name
         self.price = price
         self.quantity = quantity
         Item.all.append(self)
@@ -49,8 +49,6 @@ class Item:
 
     @name.setter
     def name(self, new_name):
-        if len(new_name) <= 10:
-            self.__name = new_name
         self.__name = new_name[:10]
 
     @classmethod
