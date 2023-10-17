@@ -39,5 +39,5 @@ def test___repr__(item):
     assert repr(item) == "Item('Смартфон', 10000, 20)"
 
 
-def test__str__(item):
+def test___str__(item):
     assert str(item) == 'Смартфон'
