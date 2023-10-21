@@ -18,11 +18,6 @@ def test_apply_discount(item):
 
 def test_name(item):
     item.name = 'СуперСмартфон'
-    assert item.name == 'СуперСмартфон'
-
-
-def test_name(item):
-    item.name = 'СуперСмартфон'
     assert item.name == 'СуперСмарт'
 
 
